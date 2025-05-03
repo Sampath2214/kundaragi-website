@@ -9,7 +9,7 @@ Welcome to the official website repository for Kundaragi Krushi Kendra — a ded
 
 ## 🚀 Live Demo
 
-You can view the website here: [https://yourusername.github.io/kundaragi-website](https://yourusername.github.io/kundaragi-website)
+You can view the website here: [https://Sampath2214.github.io/kundaragi-website](https://Sampath2214.github.io/kundaragi-website)
 
 ---
 
@@ -31,15 +31,15 @@ You can view the website here: [https://yourusername.github.io/kundaragi-website
    - Folder: `/ (root)`
 5. Click **Save**.
 6. After a few seconds, your site will be live at:  
-   `https://yourusername.github.io/kundaragi-website/`
+   `https://Sampath2214.github.io/kundaragi-website/`
 
 ---
 
 ## 📬 Contact
 
 📞 **Phone**: +91-XXXXXXXXXX  
-📧 **Email**: contact@kundaragikrushikendra.com  
-📍 **Location**: Kundaragi, Karnataka
+📧 **Email**: kundaragikrushikendra@gmail.com  
+📍 **Location**: Vijayapur, Karnataka
 
 ---
 
