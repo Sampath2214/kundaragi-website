@@ -1,7 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  ...
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KUNDARAGI KRUSHI KENDRA</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7fdf8; }
+    header { background: #2e7d32; color: white; padding: 20px 0; text-align: center; }
+    nav { background: #1b5e20; text-align: center; padding: 10px 0; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { color: #2e7d32; }
+    footer { background: #2e7d32; color: white; text-align: center; padding: 15px 0; }
+    .product-list { list-style-type: square; margin-left: 20px; }
+    img.logo { max-width: 150px; margin: 20px auto; display: block; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .gallery img { width: 100%; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="KUNDARAGI KRUSHI KENDRA Logo" class="logo" />
+    <h1>KUNDARAGI KRUSHI KENDRA</h1>
+    <p><em>Efficient Farming, Sustainable Future</em></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Kundaragi Krushi Kendra is dedicated to promoting sustainable and efficient agricultural practices. We specialize in drip irrigation systems, helping farmers maximize crop yields while conserving water. With deep roots in the farming community, we aim to be a reliable partner in your agricultural journey.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Drip irrigation system design and installation</li>
+      <li>Agricultural consultation and support</li>
+      <li>Maintenance and servicing of irrigation systems</li>
+      <li>On-site demonstration and guidance</li>
+    </ul>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <p>We provide a full range of drip irrigation products from trusted brands:</p>
+    <ul class="product-list">
+      <li>Sujay brand drip irrigation components</li>
+      <li>Jain brand pipes, emitters, and accessories</li>
+      <li>Fittings, filters, valves, and pressure regulators</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Drip irrigation setup 1">
+      <img src="gallery2.jpg" alt="Farm field with drip lines">
+      <img src="gallery3.jpg" alt="Installed irrigation equipment">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+    <p><strong>Email:</strong> contact@kundaragikrushikendra.com</p>
+    <p><strong>Address:</strong> Your Farm Road, Kundaragi, Karnataka</p>
+  </section>
+
+  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
+
+  <footer>
+    <p>&copy; 2025 KUNDARAGI KRUSHI KENDRA. All rights reserved.</p>
+  </footer>
 </body>
 </html>
