@@ -33,7 +33,17 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
       z-index: 1000;
     }
+    .lang-toggle { text-align: center; margin: 20px; }
+    .lang-toggle button { margin: 0 10px; padding: 10px 15px; font-size: 14px; cursor: pointer; background: #1b5e20; color: white; border: none; border-radius: 5px; }
   </style>
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('en');
+  </script>
 </head>
 <body>
   <header>
@@ -41,6 +51,11 @@
     <h1>KUNDARAGI KRUSHI KENDRA</h1>
     <p><em>Efficient Farming, Sustainable Future</em></p>
   </header>
+
+  <div class="lang-toggle">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('kn')">ಕನ್ನಡ</button>
+  </div>
 
   <nav>
     <a href="#about">About</a>
@@ -51,28 +66,56 @@
   </nav>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>Kundaragi Krushi Kendra is dedicated to promoting sustainable and efficient agricultural practices. We specialize in drip irrigation systems, helping farmers maximize crop yields while conserving water. With deep roots in the farming community, we aim to be a reliable partner in your agricultural journey.</p>
+    <div data-lang="en">
+      <h2>About Us</h2>
+      <p>Kundaragi Krushi Kendra is dedicated to promoting sustainable and efficient agricultural practices. We specialize in drip irrigation systems, helping farmers maximize crop yields while conserving water. With deep roots in the farming community, we aim to be a reliable partner in your agricultural journey.</p>
+    </div>
+    <div data-lang="kn">
+      <h2>ನಮ್ಮ ಬಗ್ಗೆ</h2>
+      <p>ಕುಂದರಗಿ ಕೃಷಿ ಕೇಂದ್ರವು ಸಸ್ಯೋತ್ಪಾದಕ ಕೃಷಿ ಪದ್ಧತಿಗಳನ್ನು ಉತ್ತೇಜಿಸಲು ಮತ್ತು ಡ್ರಿಪ್ ನೀರಾವರಿ ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ಪರಿಣತಿಯನ್ನು ನೀಡಲು ಬದ್ಧವಾಗಿದೆ. ನಾವು ನೀರನ್ನು ಉಳಿಸಿಕೊಂಡು ಬೆಳೆ ಉಪಜವನ್ನು ಹೆಚ್ಚಿಸಲು ರೈತರಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತೇವೆ.</p>
+    </div>
   </section>
 
   <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Drip irrigation system design and installation</li>
-      <li>Agricultural consultation and support</li>
-      <li>Maintenance and servicing of irrigation systems</li>
-      <li>On-site demonstration and guidance</li>
-    </ul>
+    <div data-lang="en">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Drip irrigation system design and installation</li>
+        <li>Agricultural consultation and support</li>
+        <li>Maintenance and servicing of irrigation systems</li>
+        <li>On-site demonstration and guidance</li>
+      </ul>
+    </div>
+    <div data-lang="kn">
+      <h2>ನಮ್ಮ ಸೇವೆಗಳು</h2>
+      <ul>
+        <li>ಡ್ರಿಪ್ ನೀರಾವರಿ ವ್ಯವಸ್ಥೆಯ ವಿನ್ಯಾಸ ಮತ್ತು ಸ್ಥಾಪನೆ</li>
+        <li>ಕೃಷಿ ಸಲಹೆ ಮತ್ತು ಬೆಂಬಲ</li>
+        <li>ನೀರಾವರಿ ವ್ಯವಸ್ಥೆಗಳ ನಿರ್ವಹಣೆ ಮತ್ತು ಸೇವೆ</li>
+        <li>ಸ್ಥಳೀಯ ಪ್ರದರ್ಶನ ಮತ್ತು ಮಾರ್ಗದರ್ಶನ</li>
+      </ul>
+    </div>
   </section>
 
   <section id="products">
-    <h2>Our Products</h2>
-    <p>We provide a full range of drip irrigation products from trusted brands:</p>
-    <ul class="product-list">
-      <li>Sujay brand drip irrigation components</li>
-      <li>Jain brand pipes, emitters, and accessories</li>
-      <li>Fittings, filters, valves, and pressure regulators</li>
-    </ul>
+    <div data-lang="en">
+      <h2>Our Products</h2>
+      <p>We provide a full range of drip irrigation products from trusted brands:</p>
+      <ul class="product-list">
+        <li>Sujay brand drip irrigation components</li>
+        <li>Jain brand pipes, emitters, and accessories</li>
+        <li>Fittings, filters, valves, and pressure regulators</li>
+      </ul>
+    </div>
+    <div data-lang="kn">
+      <h2>ನಮ್ಮ ಉತ್ಪನ್ನಗಳು</h2>
+      <p>ನಾವು ನಂಬಿಗಸ್ತ ಬ್ರಾಂಡ್‌ಗಳಿಂದ ಡ್ರಿಪ್ ನೀರಾವರಿ ಉತ್ಪನ್ನಗಳ ಸಂಪೂರ್ಣ ಶ್ರೇಣಿಯನ್ನು ಒದಗಿಸುತ್ತೇವೆ:</p>
+      <ul class="product-list">
+        <li>ಸುಜಯ್ ಬ್ರಾಂಡ್ ಡ್ರಿಪ್ ನೀರಾವರಿ ಭಾಗಗಳು</li>
+        <li>ಜೈನ್ ಬ್ರಾಂಡ್ ಪೈಪ್‌ಗಳು, ಎಮಿಟರ್‌ಗಳು ಮತ್ತು ಆಕ್ಸೆಸರೀಸ್</li>
+        <li>ಫಿಟ್ಟಿಂಗ್‌ಗಳು, ಫಿಲ್ಟರ್‌ಗಳು, ಕವಾಟಗಳು ಮತ್ತು ಒತ್ತಡ ನಿಯಂತ್ರಕಗಳು</li>
+      </ul>
+    </div>
   </section>
 
   <section id="gallery">
@@ -85,10 +128,18 @@
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-    <p><strong>Email:</strong> contact@kundaragikrushikendra.com</p>
-    <p><strong>Address:</strong> Your Farm Road, Kundaragi, Karnataka</p>
+    <div data-lang="en">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p><strong>Email:</strong> contact@kundaragikrushikendra.com</p>
+      <p><strong>Address:</strong> Your Farm Road, Kundaragi, Karnataka</p>
+    </div>
+    <div data-lang="kn">
+      <h2>ಸಂಪರ್ಕಿಸಿ</h2>
+      <p><strong>ದೂರವಾಣಿ:</strong> +91-XXXXXXXXXX</p>
+      <p><strong>ಇಮೇಲ್:</strong> contact@kundaragikrushikendra.com</p>
+      <p><strong>ವಿಳಾಸ:</strong> ಯುರ್ ಫಾರ್ಮ್ ರಸ್ತೆ, ಕುಂದರಗಿ, ಕರ್ನಾಟಕ</p>
+    </div>
   </section>
 
   <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
